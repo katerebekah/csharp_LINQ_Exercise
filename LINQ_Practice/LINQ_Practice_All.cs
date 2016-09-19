@@ -31,14 +31,14 @@ namespace LINQ_Practice
         public void DoAllCohortsHaveTwoOrMoreJuniorInstructors()
         {
             var doAll = PracticeData/*FILL IN LINQ EXPRESSION*/;
-            Assert.IsTrue(true); //<-- change true to doAll
+            Assert.IsTrue(false); //<-- change false to doAll
         }
 
         [TestMethod]
         public void DoAllCohortsFiveStudents()
         {
             var doAll = PracticeData/*FILL IN LINQ EXPRESSION*/;
-            Assert.IsTrue(true); //<-- change true to doAll
+            Assert.IsTrue(false); //<-- change false to doAll
         }
 
         [TestMethod]
@@ -59,14 +59,14 @@ namespace LINQ_Practice
         public void DoAllStudentsInCohort1HaveFirstNamesThatContainTheLetterE()
         {
             var doAll = PracticeData/*FILL IN LINQ EXPRESSION*/; //Hint: Cohort1 would be PracticeData[0]
-            Assert.IsTrue(true); //<-- change true to doAll
+            Assert.IsTrue(false); //<-- change false to doAll
         }
 
         [TestMethod]
         public void DoAllActiveCohortsHavePrimaryInstructorsWithFirstNamesThatContainTheLetterA()
         {
             var doAll = PracticeData/*FILL IN LINQ EXPRESSION*/;
-            Assert.IsTrue(true); //<-- change true to doAll
+            Assert.IsTrue(false); //<-- change false to doAll
         }
     }
 }

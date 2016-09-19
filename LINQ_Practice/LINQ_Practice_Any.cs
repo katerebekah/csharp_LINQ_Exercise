@@ -30,43 +30,43 @@ namespace LINQ_Practice
         [TestMethod]
         public void DoAnyCohortsHavePrimaryInstructorsBornIn1980s()
         {
-            var doAll = PracticeData/*FILL IN LINQ EXPRESSION*/;
-            Assert.IsTrue(true); //<-- change true to doAll
+            var doAny = PracticeData/*FILL IN LINQ EXPRESSION*/;
+            Assert.IsTrue(false); //<-- change false to doAny
         }
 
         [TestMethod]
         public void DoAnyCohortsHaveActivePrimaryInstructors()
         {
-            var doAll = PracticeData/*FILL IN LINQ EXPRESSION*/;
-            Assert.IsTrue(true); //<-- change true to doAll
+            var doAny = PracticeData/*FILL IN LINQ EXPRESSION*/;
+            Assert.IsTrue(false); //<-- change false to doAny
         }
 
         [TestMethod]
         public void DoAnyActiveCohortsHave3JuniorInstructors()
         {
-            var doAll = PracticeData/*FILL IN LINQ EXPRESSION*/;
-            Assert.IsTrue(true); //<-- change true to doAll
+            var doAny = PracticeData/*FILL IN LINQ EXPRESSION*/;
+            Assert.IsTrue(false); //<-- change false to doAny
         }
 
         [TestMethod]
         public void AreAnyCohortsBothFullTimeAndNotActive()
         {
-            var doAll = PracticeData/*FILL IN LINQ EXPRESSION*/;
-            Assert.IsTrue(true); //<-- change true to doAll
+            var doAny = PracticeData/*FILL IN LINQ EXPRESSION*/;
+            Assert.IsTrue(false); //<-- change false to doAny
         }
 
         [TestMethod]
         public void AreAnyStudentsInCohort3NotActiveAndBornInOctober()
         {
-            var doAll = PracticeData/*FILL IN LINQ EXPRESSION*/;  //HINT: Cohort3 is PracticeData[2]
-            Assert.IsFalse(true); //<-- change true to doAll
+            var doAny = PracticeData/*FILL IN LINQ EXPRESSION*/;  //HINT: Cohort3 is PracticeData[2]
+            Assert.IsFalse(true); //<-- change true to doAny
         }
 
         [TestMethod]
         public void AreAnyJuniorInstructorsInCohort4NotActive()
         {
-            var doAll = PracticeData/*FILL IN LINQ EXPRESSION*/;  //HINT: Cohort4 is PracticeData[3]
-            Assert.IsFalse(true); //<-- change true to doAll
+            var doAny = PracticeData/*FILL IN LINQ EXPRESSION*/;  //HINT: Cohort4 is PracticeData[3]
+            Assert.IsFalse(true); //<-- change true to doAny
         }
     }
 }
