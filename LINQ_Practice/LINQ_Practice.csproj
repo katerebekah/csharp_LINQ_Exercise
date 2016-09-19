@@ -45,13 +45,28 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="CohortBuilder.cs" />
+    <Compile Include="LINQ_Practice_All.cs" />
+    <Compile Include="LINQ_Practice_MethodChaining.cs" />
+    <Compile Include="LINQ_Practice_OrderBy.cs" />
+    <Compile Include="LINQ_Practice_MinMax.cs" />
+    <Compile Include="LINQ_Practice_Single.cs" />
+    <Compile Include="LINQ_Practice_First.cs" />
+    <Compile Include="LINQ_Practice_Select.cs" />
+    <Compile Include="Models\Cohort.cs" />
+    <Compile Include="Models\Instructor.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="LINQ_Practice_Where.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LINQ_Practice_Any.cs" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
