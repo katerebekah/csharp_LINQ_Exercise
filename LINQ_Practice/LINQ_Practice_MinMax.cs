@@ -29,7 +29,7 @@ namespace LINQ_Practice
         [TestMethod]
         public void WhatIsTheBirthdayOfTheYoungestStudentInCohort3()
         {
-            var maxValue = PracticeData/*FILL IN LINQ EXPRESSION*/; //HINT: Cohort3 is PracticeData[2]
+            var maxValue = PracticeData[2].Students.Min(c => c.Birthday)    /*FILL IN LINQ EXPRESSION*/; //HINT: Cohort3 is PracticeData[2]
             Assert.AreEqual(maxValue, new DateTime(1987, 8, 13));
         }
 
