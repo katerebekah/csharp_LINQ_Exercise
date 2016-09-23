@@ -33,29 +33,29 @@ namespace LINQ_Practice
         [TestMethod]
         public void GetAllCohortsByName()
         {
-            var expected = PracticeData/*FILL IN LINQ EXPRESSION*/.ToList();
+            var expected = PracticeData.OrderBy(c => c.Name).ToList();
             CollectionAssert.AreEqual(expected, new List<Cohort> { CohortBuilder.Cohort2, CohortBuilder.Cohort4, CohortBuilder.Cohort1, CohortBuilder.Cohort3 });
         }
         
         [TestMethod]
         public void GetAllStudentsInCohort1ByBirthday()
         {
-            var expected = PracticeData/*FILL IN LINQ EXPRESSION*/.ToList(); //HINT: Cohort1 is PracticeData[0]
+            var expected = PracticeData[0].Students.OrderBy(c => c.Birthday).ToList(); //HINT: Cohort1 is PracticeData[0]
             CollectionAssert.AreEqual(expected, new List<Student> { CohortBuilder.Student5, CohortBuilder.Student1, CohortBuilder.Student4, CohortBuilder.Student2, CohortBuilder.Student3 });
         }
 
         [TestMethod]
         public void GetAllStudentsInCohort1ByBirthdayYoungestFirst()
         {
-            var expected = PracticeData/*FILL IN LINQ EXPRESSION*/.ToList(); //HINT: Cohort1 is PracticeData[0]
+            var expected = PracticeData[0].Students.OrderByDescending(c => c.Birthday).ToList(); //HINT: Cohort1 is PracticeData[0]
             CollectionAssert.AreEqual(expected, new List<Student> { CohortBuilder.Student3, CohortBuilder.Student2, CohortBuilder.Student4, CohortBuilder.Student1, CohortBuilder.Student5 });
         }
 
         [TestMethod]
         public void GetAllJuniorInstructorsInCohort3ByLastName()
         {
-            var expected = PracticeData/*FILL IN LINQ EXPRESSION*/.ToList();
-            CollectionAssert.AreEqual(expected, null);
+            var expected = PracticeData[2].JuniorInstructors.OrderBy(c => c.LastName).ToList();
+            CollectionAssert.AreEqual(expected, new List<Instructor> { CohortBuilder.Instructor4, CohortBuilder.Instructor1, CohortBuilder.Instructor6 });
         }
     }
 }
