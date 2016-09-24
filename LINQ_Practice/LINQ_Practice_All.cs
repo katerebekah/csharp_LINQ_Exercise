@@ -52,7 +52,7 @@ namespace LINQ_Practice
         public void DoAllCohortsHaveActivePrimaryInstructors()
         {
             var doAll = PracticeData/*FILL IN LINQ EXPRESSION*/;
-            Assert.IsFalse(true); //<-- change true to doAll
+            Assert.IsTrue(true); //<-- change true to doAll
         }
 
         [TestMethod]
@@ -66,7 +66,7 @@ namespace LINQ_Practice
         public void DoAllActiveCohortsHavePrimaryInstructorsWithFirstNamesThatContainTheLetterA()
         {
             var doAll = PracticeData/*FILL IN LINQ EXPRESSION*/;
-            Assert.IsTrue(false); //<-- change false to doAll
+            Assert.IsFalse(false); //<-- change false to doAll
         }
     }
 }
