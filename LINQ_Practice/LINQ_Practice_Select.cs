@@ -41,28 +41,28 @@ namespace LINQ_Practice
         [TestMethod]
         public void GetAllPrimaryInstructorsInAllCohorts()
         {
-            var expected = PracticeData/*FILL IN LINQ EXPRESSION*/.ToList();
+            var expected = PracticeData.Select(cohort => cohort.PrimaryInstructor).ToList();
             CollectionAssert.AreEqual(expected, new List<Instructor> { CohortBuilder.Instructor2, CohortBuilder.Instructor6, CohortBuilder.Instructor3, CohortBuilder.Instructor1});
         }
         
         [TestMethod]
         public void GetAllStudents()
         {
-            var expected = PracticeData/*FILL IN LINQ EXPRESSION*/.ToList();
+            var expected = PracticeData.SelectMany(cohort => cohort.Students).ToList();
             CollectionAssert.AreEqual(expected, new List<Student> { CohortBuilder.Student1, CohortBuilder.Student2, CohortBuilder.Student3, CohortBuilder.Student4, CohortBuilder.Student5, CohortBuilder.Student6, CohortBuilder.Student7, CohortBuilder.Student8, CohortBuilder.Student9, CohortBuilder.Student10, CohortBuilder.Student11, CohortBuilder.Student12, CohortBuilder.Student13, CohortBuilder.Student14, CohortBuilder.Student15, CohortBuilder.Student16, CohortBuilder.Student17, CohortBuilder.Student18, CohortBuilder.Student19, CohortBuilder.Student20 });
         }
 
         [TestMethod]
         public void GetAllPrimaryInstructorFirstNames()
         {
-            var expected = PracticeData/*FILL IN LINQ EXPRESSION*/.ToList();
+            var expected = PracticeData.Select(cohort => cohort.PrimaryInstructor.FirstName).ToList();
             CollectionAssert.AreEqual(expected, new List<string> { "Jurnell", "Zachary", "Blaise", "Kate" });
         }
         
         [TestMethod]
         public void GetAllCohortNames()
         {
-            var expected = PracticeData/*FILL IN LINQ EXPRESSION*/.ToList();
+            var expected = PracticeData.Select(cohort => cohort.Name).ToList();
             CollectionAssert.AreEqual(expected, new List<string> { "Evening Five", "Cohort of the Future", "Evening Ninja Warriors", "Day Backgammon Geeks" });
         }
 
